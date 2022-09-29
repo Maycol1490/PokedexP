@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.title_principal{
+    background-image: url("./assets/fondo.jpg");
+    background-size:contain;
+    display: flex;
+    justify-content: center;
+    min-width:100%;
+    padding: 3rem 3rem;
+
+}
+.title_principal img{
+    min-width:100%;
+}
+.container_pokedex{
+    background-image: url(./assets/fondo_2.jpg);
+    background-size: cover;
+    background-color: gold;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    max-width: 100%;
+}
+.container_inf{
+    background-color: #fff9;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title_inf , .type_inf {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff9;
+    font-size: 1.5em;
+    padding: .5em .5em;
+    border-radius: 1em;
+    box-shadow: .2em .2em .2em #0005;
+    margin-top: .5em;
+    color: #ff0069;
+    gap: .2em;
+}
+.title_inf span, .type_inf span{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2em;
+    color:#FFB200 ;
+    text-transform: uppercase;
+
+}
+
+.container_inf img {
+    margin-top: 1rem;
+    margin-bottom: .3rem;
+    background-color:#fff9;
+    border-radius: 1.5em;
+    box-shadow: 1em 1em 1em #0005;
+    width: 50%;
+    height: 50%;
+}
+.statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    font-size: 1.2em;
+    color: #ff0069;
+    margin-top: .5em;
+}
+.statistics span{
+    color: #FFB200;
+    font-weight:normal;
+}
+.list_pokemon{
+    background-color: #fff9;
+    border-radius: 1em;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.title_list{
+    color: #FFB200;
+    margin: .5em .5em;
+}
+.list_list{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    color: #ff0069;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.list_list img {
+    width: 20px;
+    height: 20px;
+}
+@media screen and (max-width :600px){
+    .container_pokedex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 1000px;
+    }
+    .list_pokemon{
+        width: 80%;
+        margin-top: 2em;
+        height: 100%;
+
+    }
+
+}
