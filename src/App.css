@@ -63,7 +63,7 @@ ul,li{
     display: flex;
     flex-wrap: wrap;
     gap: .2em;
-    color:#FFB200 ;
+    color:#256D85 ;
     text-transform: uppercase;
 
 }
@@ -86,7 +86,7 @@ ul,li{
     margin-top: .5em;
 }
 .statistics span{
-    color: #FFB200;
+    color: #256D85;
     font-weight:normal;
 }
 .list_pokemon{
@@ -98,7 +98,7 @@ ul,li{
     width: 20%;
 }
 .title_list{
-    color: #FFB200;
+    color: #256D85;
     margin: .5em .5em;
 }
 .list_list{
